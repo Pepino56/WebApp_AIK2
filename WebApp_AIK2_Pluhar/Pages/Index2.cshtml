@@ -1,0 +1,20 @@
+﻿@page
+@model Index2Model
+@{
+    ViewData["Title"] = "The Form";
+}
+<h1>The Form</h1><br />
+<h3>Description</h3>
+<p>1. Select a number from 1 to 5.</p>
+<p>2. You can choise a status of checkbox  ( true / false ).</p>
+<p>3. Click the Submit button and your options will be sent to a database that will save them.</p><br />
+
+<div>
+    <form method="post">
+        <label for="value">Rating (1-5):</label>
+        <input type="number" name="value" min="1" max="5" required />
+        <label for="success">Success:</label>
+        <input type="checkbox" name="Success" value="true" /><br />
+        <button type="submit">Submit</button>
+    </form>
+</div>
